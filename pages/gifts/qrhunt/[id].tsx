@@ -83,7 +83,7 @@ export default function QRHunt({ data, error }: PropsInterface) {
 										next clue
 									</p>
 									<QrReader
-										constraints={{}}
+										constraints={{ facingMode: "front" }}
 										onResult={(result, error) => {
 											if (result) {
 												clueProgressUpdate(result.getText())
