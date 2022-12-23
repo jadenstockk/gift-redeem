@@ -11,7 +11,7 @@ export default function Document() {
 					rel="stylesheet"
 				/>
 			</Head>
-			<body className="bg-slate-800">
+			<body id="made-by-jaden-stock" className="bg-slate-800">
 				<p className="text-center text-white text-xs m-2">
 					Made by <b>Jaden</b> in <b>December 2022</b>
 				</p>
