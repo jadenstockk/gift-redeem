@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	font-family: "Inter", sans-serif;
+	scroll-behavior: smooth;
+}
+
+.shine {
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		background: linear-gradient(
+			to right,
+			fade_out(#fff, 1) 0%,
+			fade_out(#fff, 0.7) 100%
+		);
+		content: "";
+		display: block;
+		height: 100%;
+		left: -75%;
+		position: absolute;
+		top: 0;
+		transform: skewX(-25deg);
+		width: 50%;
+		z-index: 2;
+	}
+
+	&::before {
+		animation: shine 4s infinite;
+	}
+
+	@keyframes shine {
+		100% {
+			left: 125%;
+		}
+	}
+}
+
+.float {
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(5px);
+	}
+	50% {
+		transform: translatey(-15px);
+	}
+	100% {
+		transform: translatey(5px);
+	}
+}
+
+.shake {
+	animation: shake-animation 1s ease infinite;
+}
+
+@keyframes shake-animation {
+	0% {
+		transform: translate(0, 0);
+	}
+	10.78571% {
+		transform: translate(10px, 0);
+	}
+	30.57143% {
+		transform: translate(0, 0);
+	}
+	50.35714% {
+		transform: translate(20px, 0);
+	}
+	70.14286% {
+		transform: translate(0, 0);
+	}
+	80.92857% {
+		transform: translate(10px, 0);
+	}
+	99.71429% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
