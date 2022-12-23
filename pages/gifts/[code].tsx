@@ -54,7 +54,9 @@ export default function Gifts({
 							{data.recipient?.nickName ? (
 								<>
 									<span> for </span>
-									<span className="text-white font-bold text-4xl">Dad</span>
+									<span className="text-white font-bold text-4xl">
+										{data?.recipient?.nickName || "You"}
+									</span>
 								</>
 							) : (
 								""
