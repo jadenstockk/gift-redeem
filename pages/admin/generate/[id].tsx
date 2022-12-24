@@ -28,21 +28,23 @@ export default function QRHunt({ data, url }: PropsInterface) {
 								: ""}
 							:
 						</h2>
-						<div className="mb-10">
+						<div className="py-10 bg-white text-black">
 							<QRCode
 								className="m-auto"
 								value={process.env.URL + "/gifts/" + data.code}
+								format="jpg"
 							/>
+
 							<p>{url + "/gifts/" + data.code}</p>
 						</div>
-						<p className="mb-10">
+						<p className="py-10 bg-white text-black">
 							Remember to ignore the first 0 because it is already included in
 							the initial code
 						</p>
 						{data.qrhunt.clues
 							? data.qrhunt.clues.map((clue: any, index: number) => (
 									<>
-										<div className="mb-10">
+										<div className="py-10 bg-white text-black">
 											<QRCode
 												className="m-auto"
 												value={`${index}_${data._id}`}

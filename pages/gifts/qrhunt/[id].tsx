@@ -228,9 +228,9 @@ export default function QRHunt({ data, error, url }: PropsInterface) {
 										</h2>
 										<p className="mt-1">
 											You have successfully completed the QR Code Hunt and found
-											your gift! Your time If you would like to look back on
-											this experience in the future, you can copy and save the
-											following link to get here again:
+											your gift! If you would like to look back on this
+											experience in the future you can scan the first QR code
+											again or copy and save the following link:
 										</p>
 										<a
 											className="mx-auto my-5 text-xs text-blue-300 overflow-ellipsis"

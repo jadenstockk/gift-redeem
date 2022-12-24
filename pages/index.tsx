@@ -18,8 +18,10 @@ export default function Home() {
 			<main className="h-screen flex">
 				<div className=" text-white w-fit h-fit block m-auto justify-center p-8 rounded-3xl text-center items-center">
 					<div className="items-center">
-						<h3 className="font-semibold text-2xl">🎁 Jaden&apos;s Gifts</h3>
-						<h2 className="font-bold text-4xl mb-5">Redeem Gift Code</h2>
+						<div className="float">
+							<h3 className="font-semibold text-2xl">🎁 Jaden&apos;s Gifts</h3>
+							<h2 className="font-bold text-4xl mb-5">Redeem Gift Code</h2>
+						</div>
 						<form onSubmit={() => Router.push("/gifts/" + code)}>
 							<h3 className="font-medium">Enter your code below:</h3>
 							<input
@@ -31,7 +33,7 @@ export default function Home() {
 							/>
 
 							<Link
-								className="block mt-4 w-48 m-auto bg-slate-600 p-2 rounded-xl"
+								className="shine block mt-4 w-48 m-auto bg-green-700 p-2 rounded-xl"
 								href={"/gifts/" + code}
 							>
 								Redeem

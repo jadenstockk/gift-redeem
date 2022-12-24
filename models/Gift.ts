@@ -14,7 +14,7 @@ const GiftSchema = new Schema(
 		},
 		type: {
 			type: String,
-			enum: ["qrhunt", "directions", "message", "card", "image"],
+			enum: ["qrhunt", "directions", "message", "card", "image", "file"],
 			required: true
 		},
 		recipient: {
