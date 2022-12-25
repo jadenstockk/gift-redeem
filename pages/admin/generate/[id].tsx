@@ -20,7 +20,7 @@ export default function QRHunt({ data, url }: PropsInterface) {
 			</Head>
 			<main>
 				{data && data.qrhunt ? (
-					<div className="text-white text-center mt-10">
+					<div className="text-white text-center mt-2">
 						<h2 className="font-bold text-3xl mb-10">
 							QR Codes
 							{data.recipient?.fullName
@@ -28,6 +28,7 @@ export default function QRHunt({ data, url }: PropsInterface) {
 								: ""}
 							:
 						</h2>
+						<p className="font-semi-bold text-xl mb-10">{data.name || ""}</p>
 						<div className="py-10 bg-white text-black">
 							<QRCode
 								className="m-auto"
